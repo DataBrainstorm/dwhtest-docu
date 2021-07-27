@@ -1,6 +1,6 @@
 # Getting started
 
-## Created ayour first test case
+## Created your first test case
 1. Open the "Test cases" section::
 
 ![](https://firebasestorage.googleapis.com/v0/b/snowflake-test-manager.appspot.com/o/documentation%2Fgetting_started%2Ftest_cases_scree.png?alt=media&token=1e2526c5-44a4-477b-9198-5215ac868da7)
