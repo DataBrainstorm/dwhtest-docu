@@ -7,9 +7,9 @@ There are two ways of usage the app.
 In this section we will consider only the Docker containers installation
 
 
-## Steps
+# Steps:
 
-### Backend part
+## Backend part
 
 1. create .env file
 
@@ -30,3 +30,14 @@ docker run -ti --env-file .env -p 8080:8080  hollister/sftm-backend
 
 3. Check that the backend is installed correctly. Go to http://YOURHOSTNAME:8080/api in your browser. You should see the similar page
 ![](https://firebasestorage.googleapis.com/v0/b/snowflake-test-manager.appspot.com/o/backend%2Fbackend.jpg?alt=media&token=fe784267-bf65-4e99-b5a7-2903133fec72)
+
+## Frontend part
+
+1. Execute this command:
+```
+docker run -ti -p 8081:8081 -e VUE_APP_SERVER=//YOUR_BACKEND_SERVER:8080/api hollister/sftm-frontend:latest
+```
+
+YOUR_BACKEND_SERVER is a url to your backend server
+
+2. Go to http://YOUR_FRONTEND_SERVER:8081
